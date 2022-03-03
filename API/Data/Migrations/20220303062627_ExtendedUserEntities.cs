@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace API.Data.Migrations
 {
-    public partial class ExetendedUserEntities : Migration
+    public partial class ExtendedUserEntities : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,7 +27,7 @@ namespace API.Data.Migrations
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
             migrationBuilder.AddColumn<DateTime>(
-                name: "DateofBerth",
+                name: "DateOfBirth",
                 table: "Users",
                 type: "TEXT",
                 nullable: false,
@@ -116,7 +116,7 @@ namespace API.Data.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "DateofBerth",
+                name: "DateOfBirth",
                 table: "Users");
 
             migrationBuilder.DropColumn(

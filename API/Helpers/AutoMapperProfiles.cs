@@ -20,7 +20,7 @@ namespace API.Helpers
                     x.IsMain).Url))
                 .ForMember(dest => dest.Age, opt => 
                     opt.MapFrom(src => 
-                    src.DateofBerth.CalculateAge()));
+                    src.DateOfBirth.CalculateAge()));
             CreateMap<Photo, PhotoDto>();
         }
     }
